@@ -1,0 +1,52 @@
+.dispNotes{
+    border:6px;
+    position: relative;
+    width: 1000px;
+    height: 450px;
+    padding: 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: -300px -9000px 0px 250px;
+    /* box-shadow: 2px 2px 5px #000000; */
+}
+
+.dispSingleNotes{
+    position:relative;
+    box-shadow: 2px 2px 5px #7ac4df;
+    float:left;
+    /* border:15px soild black; */
+    width:200px;
+    height:300px;
+    padding:10px;
+    margin:20px;
+}
+
+.dispTitle{
+
+    border:3px;
+    height:20px;
+    padding:3px;
+    font-weight:bold;
+
+}
+
+.dispNotes{
+
+    border: 3px;
+}
+
+.star{
+    float:right;
+    position:absolute;
+    bottom:0px;
+    right: 0px;
+    padding:5px;
+}
+
+.del{
+    position:absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 5px 30px;
+}

@@ -1,0 +1,64 @@
+.Common {
+    
+    position: relative;
+    width: 1000px;
+    height: 450px;
+    padding: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: -250px 50px 90px 250px;
+}
+.icon {
+    float: right;
+    right: 0px;
+    background-color: transparent;
+    border: none;
+    color: rgb(14, 14, 14);
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 50px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.AddNotes {
+    box-shadow: 2px 2px 5px #000000;
+}
+/* .add-main-preview {
+    border-top: 1px solid #ddd;
+    overflow-y: scroll;
+    background: rgba(0, 0, 0, 0.02);
+} */
+
+/* .add-main {
+    padding: 25px;
+} */
+
+/* .add-main , */
+textarea {
+    display: block;
+    /* border: 1px solid #ddd; */
+    margin: 20px 0px 20px 0px;
+    width: 100%;
+    height: calc(50vh - 130px);
+    /* padding: 10px; */
+    /* resize: none; */
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.notePreview {
+    border-top: 1px solid #ddd;
+    overflow-y: scroll;
+    background: rgba(0, 0, 0, 0.02);
+}
+
+/* .add-main input {
+    height: 50px;
+    font-size: 2rem;
+} */
