@@ -2,7 +2,6 @@ import {Navbar, Container, Nav} from 'react-bootstrap';
 import MLogo from "../assets/MLogo.jpeg";
 import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged} from "firebase/auth";
 import { useState } from 'react';
-import firebase from '../firebase';
 import { useNavigate} from 'react-router-dom';
 import { FaUserAlt} from "react-icons/fa";
 import Button from 'react-bootstrap/Button';
@@ -22,18 +21,12 @@ const NavbarSide = () => {
             signInWithPopup(auth, provider).then((result) => {
             // This gives you a Google Access Token.
             const credential = GoogleAuthProvider.credentialFromResult(result);
-            const token = credential.accessToken;
             // The signed-in user info.
             
             console.log(auth.currentUser.email);
 
             }).catch((error) => {
-                const errorCode = error.code;
-                const errorMessage = error.message;
-                const email = error.email;
-                // The AuthCredential type that was used.
-                const credential = GoogleAuthProvider.credentialFromError(error);
-                // ...
+           
             });
         
     }
