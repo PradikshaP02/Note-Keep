@@ -13,25 +13,16 @@ import {
   deleteDoc,
   updateDoc,
 } from "firebase/firestore";
-import { Button} from "react-bootstrap"
 export default function Home() {
     
     const auth = getAuth();
-    // console.log("AddNotes");
     const [note, setNote] = useState([{id:"initial"}]);
-    //var noteStar=[];
     useEffect(() => 
        onSnapshot(collection(db,auth.currentUser.email),(snapshot) =>
         setNote(snapshot.docs.map((doc) => ({ ...doc.data(),id:doc.id})))
        ),
     []);
 
-    // const handleChange = (notes) => {
-    //     if(notes.starred === true){
-    //         noteStar.push(notes.id);
-    //     }
-    // }
-    //console.log(noteStar);
     const handleDelete = async (id) =>{
         await deleteDoc(doc(db, auth.currentUser.email ,id));
     };
