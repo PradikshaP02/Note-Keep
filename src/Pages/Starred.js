@@ -6,14 +6,12 @@ import  Offcanvas from '../Components/Offcanvas';
 import {
   collection,
   onSnapshot,
-  doc
 } from "firebase/firestore";
 export default function Starred() {
     
     const auth = getAuth();
-    // console.log("AddNotes");
     const [note, setNote] = useState([{id:"initial"}]);
-    var noteStar=[];
+    const noteStar=[];
     useEffect(() => 
        onSnapshot(collection(db,auth.currentUser.email),(snapshot) =>
         setNote(snapshot.docs.map((doc) => ({ ...doc.data(),id:doc.id})))
@@ -33,7 +31,7 @@ export default function Starred() {
             <Offcanvas />
             <div className="dispNotes">
                 {note.map((notes) => (
-                     <div className="dispSingleNotes" key={notes.id} onChange={handleChange(notes)}>
+                     <div className="dispSingleNotes" key={notes.id} onChange={handleChange}>
                       
                             <h3>{noteStar.title}</h3>
                             <p>{noteStar.note}</p>
