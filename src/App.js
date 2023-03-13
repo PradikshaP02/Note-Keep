@@ -1,5 +1,3 @@
-import Navbar from './Components/Navbar';
-import  Offcanvas from './Components/Offcanvas';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import  Landing from './Pages/Landing';
 import AddNotes from './Pages/AddNotes';
