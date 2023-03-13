@@ -1,5 +1,5 @@
 
-import {useState,useEffect} from "react";
+import {useState} from "react";
 import {Form} from "react-bootstrap";
 import '../AddNotes.css';
 import { getAuth} from "firebase/auth"
@@ -10,9 +10,7 @@ import  Offcanvas from '../Components/Offcanvas';
 
 export default function AddNotes() {
 
-  // console.log("AddNotes");
    const auth = getAuth();
-    // console.log("AddNotes");
   const [title, setTitle] = useState("");
   const [notes, setNotes] = useState("");
 
