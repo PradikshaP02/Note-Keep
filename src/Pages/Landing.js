@@ -1,9 +1,7 @@
-import { Container, Row, Col, Button,ToastContainer} from "react-bootstrap"
-import Toast from 'react-bootstrap/Toast'
+import { Container, Row, Col, Button} from "react-bootstrap"
 import { useState} from 'react';
 import { getAuth, onAuthStateChanged} from "firebase/auth"
 import {useNavigate} from "react-router-dom";
-import Home from './Home';
 import LandingPageImg from '../assets/LandingPageImg.jpeg';
 import Image from 'react-bootstrap/Image';
 import Navbar from '../Components/Navbar';
